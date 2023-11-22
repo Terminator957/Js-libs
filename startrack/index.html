@@ -1,0 +1,74 @@
+<!--
+ * @Description: 
+ * @Author: xiuji
+ * @Date: 2023-11-22 14:36:37
+ * @LastEditTime: 2023-11-22 16:43:39
+ * @LastEditors: Do not edit
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>React App</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      transition-timing-function: cubic-bezier(.19, 1, .22, 1)
+    }
+
+    body,
+    html {
+      font-family: "Microsoft YaHei";
+      -webkit-font-smoothing: antialiased;
+      color: #fff;
+      line-height: 1.5;
+      min-width: 1150px;
+      background-color: #212121;
+      font-size: 14px;
+      overflow-x: hidden
+    }
+
+    #startrack {
+      height: 140%;
+      width: 100%
+    }
+
+    .background.fixed {
+      position: fixed;
+      top: -60%
+    }
+
+    .background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh
+    }
+
+    .background .cover {
+      position: absolute;
+      bottom: -42%;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(to top, rgba(32, 32, 32, 1) 30%, rgba(32, 32, 32, 0) 100%)
+    }
+  </style>
+</head>
+
+<body>
+  <div class="background">
+    <canvas id="startrack"></canvas>
+    <div class="cover"></div>
+  </div>
+  <div id="root"></div>
+
+  <script src="./page.js"></script>
+</body>
+
+</html>
